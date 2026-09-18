@@ -12,10 +12,15 @@
     /* Farver */
 
     --primaryPurple: 115, 64, 96, 1;
-    --lightPurple: 246, 237, 244, 1;
+    --darkPurple: 115, 64, 96, 1;
+    --mediumDarkPurple: 224, 193, 217, 1;
+    --mediumPurple: 246, 237, 244, 1;
+    --lightPurple: 250, 245, 249, 1;
     --primaryOrange: 250, 197, 79, 1;
-    --lightOrange: 251, 220, 140, 1;
-
+    --darkOrange: 178, 70, 11, 1;
+    --mediumDarkOrange: 242, 139, 14, 1;
+    --mediumOrange: 251, 220, 140, 1;
+    --lightOrange: 253, 238, 200, 1;
 }
 
 body {
