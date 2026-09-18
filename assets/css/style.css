@@ -11,7 +11,6 @@
 
 :root {
     /* Farver */
-
     --primaryPurple: rgb(115, 64, 96, 1);
     --darkPurple: rgb(115, 64, 96, 1);
     --mediumDarkPurple: rgb(224, 193, 217, 1);
@@ -35,6 +34,8 @@
 body {
     margin: 0;
     font-family: "Nunito", sans-serif;
+    background-color: #FFF9EB;
+    ;
 }
 
 h1,
