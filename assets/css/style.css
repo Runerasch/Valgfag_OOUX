@@ -6,6 +6,18 @@
     box-sizing: border-box;
 }
 
+/* Variabler*/
+
+:root {
+    /* Farver */
+
+    --primaryPurple: 115, 64, 96, 1;
+    --lightPurple: 246, 237, 244, 1;
+    --primaryOrange: 250, 197, 79, 1;
+    --lightOrange: 251, 220, 140, 1;
+
+}
+
 body {
     margin: 0;
     font-family: "Nunito", sans-serif;
@@ -18,4 +30,17 @@ h4,
 h5,
 h6 {
     font-family: "Merriweather"
+
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+h2 {
+    font-size: 1.5rem;
+}
+
+p {
+    font-size: 1rem;
 }
