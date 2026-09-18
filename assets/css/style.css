@@ -69,8 +69,7 @@ header {
 nav {
     display: flex;
     align-items: center;
-    gap: 2rem;
-    margin-left: 5rem;
+    gap: 1rem;
     margin-top: 4rem;
 }
 
@@ -131,9 +130,109 @@ nav span {
 
 /* MAIN */
 
+.hero {
+    position: relative;
+    display: block;
+    min-height: 400px;
+}
 
+.hero img {
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
 
+.hero-content {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 2rem;
+    color: white;
+}
 
+.hero h1 {
+    margin: 0;
+    margin-bottom: 1.5rem;
+    color: white;
+    z-index: 1;
+    align-self: center;
+    font-size: var(--largeSpacer);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.hero-search {
+    display: flex;
+    align-self: center;
+    gap: 0.5rem;
+    margin-top: 1rem;
+    background: rgba(255, 255, 255, 0.6);
+    border-radius: 999px;
+    padding: 0.5rem 1rem;
+    width: 400px;
+}
+
+.hero-search img {
+    width: 20px;
+    height: 20px;
+    filter: brightness(1) invert(0);
+    margin-top: 0.1rem;
+}
+
+.hero-search p {
+    margin: 0;
+    color: black;
+}
+
+.popularRecipes {
+    margin: var(--mediumSpacer) 3rem;
+}
+
+.popularRecipesFood {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0 2px 31px 21px;
+    gap: 1rem;
+    width: 1205px;
+    height: 349px;
+}
+
+.popularRecipesFood img {
+    width: 256px;
+    height: 339px;
+    display: block;
+}
+
+.popularRecipesFood>div {
+    display: flex;
+    flex-direction: column;
+    padding-right: var(--largeSpacer);
+}
+
+.popularRecipesFood p {
+    margin-top: 0.5rem;
+    text-align: center;
+    font-weight: bold;
+    font-size: var(--mediumSpacer);
+    font-family: "Merriweather";
+}
+
+.popularRecipesFood button {
+
+    margin-top: 1rem;
+    background-color: var(--primaryOrange);
+    font-weight: bold;
+    font-size: 26px;
+    width: 256px;
+    height: 68px;
+    border-radius: 5px;
+    color: var(--darkPurple);
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
 
 /* FOOTER */
 
