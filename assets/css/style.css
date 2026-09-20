@@ -35,7 +35,7 @@ body {
     margin: 0;
     font-family: "Nunito", sans-serif;
     background-color: #FFF9EB;
-    ;
+    
 }
 
 h1,
@@ -127,7 +127,7 @@ nav span {
     font-size: var(--smallSpacer);
 }
 
-
+/* lANDING PAGE */
 /* MAIN */
 
 .hero {
