@@ -1566,8 +1566,7 @@ nav span {
     grid-template-columns: 0, 1fr 400px;
     grid-template-rows: 610px 330px;
     gap: var(--mediumSpacer);
-
-    margin: 0 48px;
+    margin: 0;
 }
 
 .TaD_content img {
