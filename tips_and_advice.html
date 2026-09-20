@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>EveryCook</title>
     <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <script src="./assets/js/app.js" defer></script>
 </head>
 
@@ -46,9 +47,214 @@
 
     </header>
 
-    <main>
+    <main class="tipsAndAdvice">
+        <div class="TaD_header">
+            <h1>How to make caramel</h1>
+            <button class="TaD_button"><img src="./assets/icon/purple_edit_pen.svg" alt=""> Edit</button>
+        </div>
+
+        <div class="TaD_author">
+            <img src="./assets/img/Cathrine.svg" alt="Cathrine profile picture">
+            <p class="TaD_name">Cathrine</p>
+            <p class="TaD_usertype">Amateur cook</p>
+
+        </div>
+
+        <div class="TaD_time">
+            <img src="./assets/icon/calendar_icon_purple.svg" alt="purple calendar icon">
+            <p>24 may 2023</p>
+
+            <img src="./assets/icon/clock_icon_purple.svg" alt="purple clock icon">
+            <p>3 min</p>
+        </div>
+        <p>
+            Learn how to make smooth, golden caramel with just sugar and a little patience.
+            Follow these simple steps
+            for perfect results every time.
+        </p>
+        <br>
+
+        <section class="TaD_content">
+            <img src="./assets/img/COLOURBOX58685830.jpg" alt="">
+
+            <div class="TaD_about">
+                <div class="TaD_skillLevel">
+                    <h2>About this technique</h2>
+
+                    <h3>Skill level</h3>
+                    <p>Intermediate</p>
+                </div>
+                <br>
+
+                <div class="TaD_equipment">
+                    <h3>Equipment</h3>
+                    <p>Heavy-based saucepan</p>
+                    <br>
+                    <p>Pastry brush</p>
+                    <br>
+                    <p>Baking tray, lined with non-stick baking parchment</p>
+                </div>
+            </div>
+
+            <div class="TaD_text">
+                <p>Combine sugar and water in a heavy-bottomed saucepan and heat gently until the sugar has dissolved.
+                    Avoid stirring once the mixture begins to heat. If sugar crystals form on the sides of the pan,
+                    brush them away with a little water to keep the caramel smooth.</p>
+                <br>
+                <p>Increase the heat and let the syrup boil until it turns a deep golden color. Keep a close eye on it,
+                    as caramel can quickly go from perfect to burnt.</p>
+                <br>
+                <p>For hard caramel, pour the mixture onto baking paper and leave it to cool before breaking it into
+                    pieces. For a caramel sauce, remove it from the heat and carefully stir in cream and butter
+                    according to your recipe. Perfect for desserts, ice cream, and pancakes.</p>
+            </div>
+        </section>
+
+        <section class="related-recipes">
+            <h2>Recipes using this technique</h2>
+            <div class="related-recipes-grid">
+                <div class="recipe-card">
+                    <img src="./assets/img/Vanillacheesecake.svg" alt="Vanilla cheesecake">
+                    <div class="recipe-card-body">
+                        <i class="fa-regular fa-bookmark"></i>
+                        <div class="stars-small">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                        <h2>Vanilla cheesecake</h2>
+                        <p class="author">Mads</p>
+                        <button>See Recipe</button>
+                    </div>
+                </div>
+
+                <div class="recipe-card">
+                    <img src="./assets/img/Appletartetatin.svg" alt="Apple tarte tatin">
+                    <div class="recipe-card-body">
+                        <i class="fa-regular fa-bookmark"></i>
+                        <div class="stars-small">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+
+                        </div>
+                        <h2>Apple tarte tatin</h2>
+                        <p class="author">Cathrine</p>
+                        <button>See Recipe</button>
+                    </div>
+                </div>
+
+                <div class="recipe-card">
+                    <img src="./assets/img/Classiccremecaramel.svg" alt="classic créme caramel">
+                    <div class="recipe-card-body">
+                        <i class="fa-regular fa-bookmark"></i>
+                        <div class="stars-small">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+
+                        </div>
+                        <h2>Crème caramel</h2>
+                        <p class="author">Mads</p>
+                        <button>See Recipe</button>
+                    </div>
+                </div>
+
+                <div class="recipe-card">
+                    <img src="./assets/img/Chocolatetarte.svg" alt="chocolate tarte">
+                    <div class="recipe-card-body">
+                        <i class="fa-regular fa-bookmark"></i>
+                        <div class="stars-small">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <h2>Chocolate tarte</h2>
+                        <p class="author">Cathrine</p>
+                        <button>See Recipe</button>
+                    </div>
+                </div>
+        </section>
+        <section class="promo-strip">
+            <div class="promo-card">
+                <div class="promo-card-icon"><i class="fa-solid fa-book-open"></i></div>
+                <div class="promo-card-text">
+                    <h2>Explore foodstory</h2>
+                    <p>Find new dishes to try</p>
+                </div>
+                <i class="fa-solid fa-circle-arrow-right"></i>
+            </div>
+
+            <div class="promo-card">
+                <div class="promo-card-icon"> <i class="fa-regular fa-lightbulb"></i></div>
+                <div class="promo-card-text">
+                    <h2>Tips & advice</h2>
+                    <p>Improve your cooking</p>
+                </div>
+                <i class="fa-solid fa-circle-arrow-right"></i>
+            </div>
+
+            <div class="promo-card">
+                <div class="promo-card-icon"> <i class="fa-solid fa-kitchen-set"></i></div>
+                <div class="promo-card-text">
+                    <h2>Brand</h2>
+                    <p>Discover related brands</p>
+                </div>
+                <i class="fa-solid fa-circle-arrow-right"></i>
+            </div>
+        </section>
 
     </main>
+
+    <footer>
+        <div class="footer-links">
+            <div>
+                <a href="index.html">Home</a>
+                <a href="recipes.html">Recipe</a>
+                <a href="food-story.html">Food story</a>
+            </div>
+
+            <div>
+                <a href="brand.html">Brand</a>
+                <a href="tips-advice.html">Tips & Advice</a>
+                <a href="chefs.html">Chefs</a>
+            </div>
+        </div>
+
+
+        <div class="footer-logo">
+            <img src="assets/img/Ikon.png" alt="EveryCook logo">
+            <p>EveryCook©</p>
+        </div>
+
+
+        <div class="social-media">
+            <a href="#">
+                <img src="assets/icon/pinterest-brands-solid-full.svg" alt="Pinterest">
+            </a>
+
+            <a href="#">
+                <img src="assets/icon/youtube-brands-solid-full.svg" alt="YouTube">
+            </a>
+
+            <a href="#">
+                <img src="assets/icon/facebook-brands-solid-full.svg" alt="Facebook">
+            </a>
+
+            <a href="#">
+                <img src="assets/icon/instagram-brands-solid-full.svg" alt="Instagram">
+            </a>
+        </div>
+
+    </footer>
 </body>
 
 </html>
