@@ -194,23 +194,20 @@ nav span {
 .popularRecipesFood {
     display: flex;
     flex-direction: row;
-    align-items: flex-start;
+    justify-content: space-evenly;
     padding: 0 2px 31px 21px;
-    gap: 1rem;
-    width: 1205px;
-    height: 349px;
+    gap: 5rem;
 }
 
 .popularRecipesFood img {
     width: 256px;
-    height: 339px;
+    height: 300px;
     display: block;
 }
 
 .popularRecipesFood>div {
     display: flex;
     flex-direction: column;
-    padding-right: var(--largeSpacer);
 }
 
 .popularRecipesFood p {
@@ -223,7 +220,8 @@ nav span {
 
 .popularRecipesFood button {
 
-    margin-top: 1rem;
+    margin-top: 3rem;
+    margin-left: var(--smallSpacer);
     background-color: var(--primaryOrange);
     font-weight: bold;
     font-size: 26px;
@@ -232,6 +230,396 @@ nav span {
     border-radius: 5px;
     color: var(--darkPurple);
     box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+/* Food Story */
+
+.fsHero {
+    max-width: 1440px;
+    margin: 0 auto;
+    margin-top: 5rem;
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    gap: 2rem;
+    align-items: center;
+}
+
+.fsHeroContent {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: start;
+}
+
+.fsHeroContent>h1,
+.fsHeroContent>.fsRating,
+.fsHeroContent>.fsMetaData,
+.fsHeroContent>p {
+    grid-column: 1 / -1;
+}
+
+.fsHeroContent h1 {
+    margin: 0;
+    font-size: var(--largeSpacer);
+}
+
+.fsEditButton {
+    grid-column: 2;
+    grid-row: 2;
+}
+
+.fsEditButton {
+    display: inline-flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 0.9rem 1.5rem;
+    background: var(--primaryOrange);
+    color: var(--darkPurple);
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: var(--smallSpacer);
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.fsEditButton img {
+    width: 24px;
+    height: 24px;
+}
+
+.fsChefProfile {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.75rem;
+}
+
+.fsChefProfile img {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.fsChefProfile p {
+    margin: 0;
+    font-weight: bold;
+}
+
+
+.fsChefProfile {
+    grid-column: 1;
+    grid-row: 2;
+}
+
+.fsRating,
+.fsMetaData {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.fsRating img {
+    width: 24px;
+    height: 24px;
+
+}
+
+.fsMetaData {
+    margin-top: 25px;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+    color: var(--darkPurple);
+    font-weight: bold;
+}
+
+.fsMetaData img {
+    width: 28px;
+    height: 28px;
+}
+
+.fsMetaData span {
+    margin-right: 1.5rem;
+}
+
+.fsHeroImg img {
+    width: 100%;
+    object-fit: cover;
+    display: block;
+    border-radius: 5px;
+}
+
+.fsLine {
+    margin: 4rem auto;
+    width: 85%;
+    border-top: 1.5px solid black;
+}
+
+.fsStory {
+    max-width: 100%;
+    margin: 5rem 0 0;
+}
+
+.fsStoryOne,
+.fsStoryTwo {
+    width: 1440px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    gap: 2rem;
+    align-items: center;
+}
+
+.fsStoryContent span {
+    color: var(--darkOrange);
+    font-weight: bold;
+    font-family: "Merriweather";
+    display: block;
+}
+
+.fsStoryContent h2 {
+    margin-top: 0;
+}
+
+.fsStoryOne img {
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+    display: block;
+    border-radius: 5px;
+}
+
+.fsStoryOrange {
+    background-color: var(--mediumOrange);
+    padding: var(--largeSpacer);
+}
+
+.fsStoryTwo video {
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
+    display: block;
+    border-radius: 5px;
+}
+
+.fsStoryThree {
+    width: 1440px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 2.7fr 2fr 2fr;
+    gap: 2rem;
+    align-items: center;
+}
+
+.fsStoryThree img {
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+    display: block;
+    border-radius: 5px;
+
+}
+
+.fsStoryPurple {
+    background-color: var(--mediumPurple);
+    padding: var(--largeSpacer);
+    margin-top: 0;
+}
+
+.fsGallery {
+    max-width: 1440px;
+    width: 100%;
+    margin: 4rem auto;
+}
+
+.fsGalleryHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.fsGalleryHeader h2 {
+    margin: 0;
+}
+
+.fsGalleryNavigation {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.fsGalleryNavigation span {
+    font-weight: 700;
+    color: var(--darkOrange);
+}
+
+.fsGalleryArrow {
+    width: 40px;
+    height: 40px;
+    padding: 0;
+    border: none;
+    border-radius: 50%;
+    background-color: #FFF9EB;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.fsGalleryArrow img {
+    width: 24px;
+    height: 24px;
+}
+
+.fsGalleryGrid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 4rem;
+}
+
+.fsGalleryItem img,
+.fsGalleryItem video {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    display: block;
+}
+
+.fsGalleryItem strong,
+.fsGalleryItem span {
+    display: block;
+}
+
+.fsGalleryItem strong {
+    margin-top: 0.3rem;
+}
+
+.fsSeeAll {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1rem;
+    margin-left: auto;
+    padding: 0.6rem 1rem;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--primaryOrange);
+    color: var(--primaryPurple);
+    font-weight: bold;
+}
+
+.fsSeeAll img {
+    width: 28px;
+    height: 28px;
+}
+
+.fsRelatedStories {
+    max-width: 1440px;
+    width: 100%;
+    margin: 4rem auto;
+}
+
+.fsRelatedGrid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+.fsRelatedCard>img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    display: block;
+}
+
+.fsRelatedContent {
+    position: relative;
+    min-height: 90px;
+    padding: 1rem;
+    background-color: var(--lightPurple);
+}
+
+.fsRelatedStories h2 {
+    margin: 0;
+}
+
+.fsRelatedContent h3,
+.fsRelatedContent p {
+    margin: 0;
+}
+
+
+.fsRelatedContent p {
+    max-width: 80%;
+}
+
+.fsRelatedButton {
+    position: absolute;
+    right: 1rem;
+    bottom: 1rem;
+    width: 40px;
+    height: 40px;
+    border: none;
+    border-radius: 50%;
+    background-color: var(--lightPurple);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.fsRelatedButton img {
+    width: 48px;
+    height: 48px;
+}
+
+.fsCta {
+    max-width: 1440px;
+    width: 100%;
+    margin: 5rem auto;
+}
+
+.fsCtaGrid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+.fsCtaCard {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1.5rem;
+    background-color: var(--mediumOrange);
+}
+
+.fsCtaCard>img {
+    width: 70px;
+    height: 70px;
+}
+
+.fsCtaCard h3,
+.fsCtaCard p {
+    margin: 0;
+}
+
+.fsCtaCard h3 {
+    margin-bottom: 0.2rem;
+}
+
+.fsCtaButton {
+    width: 40px;
+    height: 40px;
+    margin-left: auto;
+    border: none;
+    border-radius: 50%;
+    background-color: var(--mediumOrange);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.fsCtaButton img {
+    width: 48px;
+    height: 48px;
 }
 
 /* FOOTER */
