@@ -1154,6 +1154,7 @@ nav span {
 
 .tipsAndAdvice {
     margin: var(--largeSpacer);
+
 }
 
 .TaD_author img {
@@ -1229,15 +1230,21 @@ nav span {
 }
 
 /* content grid */
+
 .TaD_content {
     display: grid;
-    grid-template-columns: 890px 400px;
+    grid-template-columns: 0, 1fr 400px;
     grid-template-rows: 610px 330px;
     gap: var(--mediumSpacer);
+
+    margin: 0 48px;
 }
 
 .TaD_content img {
-    width: 890px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
 }
 
 .TaD_about {
