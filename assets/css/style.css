@@ -242,6 +242,7 @@ nav span {
     gap: var(--mediumSpacer);
     margin-top: var(--mediumSpacer);
     padding: 0 3rem;
+   
 }
  
 .recipe-hero-media {
@@ -251,7 +252,7 @@ nav span {
 }
 .recipe-hero-media img {
     
-    width: 1000px;
+    width: 700px;
     height: 526px;
     object-fit: cover;
     border-radius: 8px;
@@ -299,7 +300,7 @@ nav span {
 
  
 .recipe-hero-rating {
-    width: 760px;
+    width: 600px;
     height: 526px;
     background-color: var(--mediumPurple);
     border-radius: 8px;
