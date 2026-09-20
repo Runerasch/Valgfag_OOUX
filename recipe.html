@@ -18,15 +18,15 @@
         </div>
 
         <nav>
-            <a href="#">Home</a>
+            <a href="./index.html">Home</a>
             <span>|</span>
-            <a href="#">Recipes</a>
+            <a href="./recipe.html">Recipes</a>
             <span>|</span>
-            <a href="#">Food Story</a>
+            <a href="./food_story.html">Food Story</a>
             <span>|</span>
             <a href="#">Brand</a>
             <span>|</span>
-            <a href="#">Tips &amp; Advice</a>
+            <a href="./tips_and_advice.html">Tips & Advice</a>
             <span>|</span>
             <a href="#">Chefs</a>
         </nav>
@@ -166,14 +166,14 @@
         </section>
 
 
-        <section class="new-recipes">
+        <section class="related-recipes">
             <h2>Related recipes</h2>
-            <div class="new-recipes-grid">
-                <div class="new-recipe-card">
+            <div class="related-recipes-grid">
+                <div class="recipe-card">
                     <img src="./assets/img/lasagna.jpg" alt="Lasagna">
-                    <div class="new-recipe-card-body">
+                    <div class="recipe-card-body">
                         <i class="fa-regular fa-bookmark"></i>
-                        <div class="new-stars-small">
+                        <div class="stars-small">
                             <i class="fa-solid fa-star"></i>
                             <i class="fa-solid fa-star"></i>
                             <i class="fa-solid fa-star"></i>
@@ -186,11 +186,11 @@
                     </div>
                 </div>
 
-                <div class="new-recipe-card">
+                <div class="recipe-card">
                     <img src="./assets/img/pizza.jpg" alt="Pizza">
-                    <div class="new-recipe-card-body">
+                    <div class="recipe-card-body">
                         <i class="fa-regular fa-bookmark"></i>
-                        <div class="new-stars-small">
+                        <div class="stars-small">
                             <i class="fa-solid fa-star"></i>
                             <i class="fa-solid fa-star"></i>
                             <i class="fa-solid fa-star"></i>
@@ -204,11 +204,11 @@
                     </div>
                 </div>
 
-                <div class="new-recipe-card">
+                <div class="recipe-card">
                     <img src="./assets/img/Pastapesto.jpg" alt="Pasta pesto">
-                    <div class="new-recipe-card-body">
+                    <div class="recipe-card-body">
                         <i class="fa-regular fa-bookmark"></i>
-                        <div class="new-stars-small">
+                        <div class="stars-small">
                             <i class="fa-solid fa-star"></i>
                             <i class="fa-solid fa-star"></i>
                             <i class="fa-solid fa-star"></i>
@@ -222,11 +222,11 @@
                     </div>
                 </div>
 
-                <div class="new-recipe-card">
+                <div class="recipe-card">
                     <img src="./assets/img/Spaghetti_meatballs.jpg" alt="Spaghetti meatballs">
-                    <div class="new-recipe-card-body">
+                    <div class="recipe-card-body">
                         <i class="fa-regular fa-bookmark"></i>
-                        <div class="new-stars-small">
+                        <div class="stars-small">
                             <i class="fa-solid fa-star"></i>
                             <i class="fa-solid fa-star"></i>
                             <i class="fa-solid fa-star"></i>
@@ -237,6 +237,10 @@
                         <p class="author">Mads</p>
                         <button>See Recipe</button>
                     </div>
+
+                    <button class="recipe-CtaButton">
+                        <img src="./assets/icon/circle_arrow_right.svg" alt="arrow right">
+                    </button>
                 </div>
 
             </div>
@@ -244,51 +248,33 @@
         </section>
 
 
-        <section class="recipe-Cta">
-
-            <div class="recipe-CtaGrid">
-
-                <div class="recipe-CtaCard">
-                    <img src="./assets/icon/utensils-solid-full.svg" alt="utensils">
-
-                    <div>
-                        <h3>Explore recipe</h3>
-                        <p>Find new dishes to try</p>
-                    </div>
-
-                    <button class="recipe-CtaButton">
-                        <img src="./assets/icon/circle_arrow_right.svg" alt="arrow right">
-                    </button>
+        <section class="promo-strip">
+            <div class="promo-card">
+                <div class="promo-card-icon"><i class="fa-solid fa-book-open"></i></div>
+                <div class="promo-card-text">
+                    <h2>Explore foodstory</h2>
+                    <p>Find new dishes to try</p>
                 </div>
-
-                <div class="recipe-CtaCard">
-                    <img src="./assets/icon/tips_and_advice.svg" alt="lightbulb">
-
-                    <div>
-                        <h3>Tips og advice</h3>
-                        <p>Improve your cooking</p>
-                    </div>
-
-                    <button class="recipe-CtaButton">
-                        <img src="./assets/icon/circle_arrow_right.svg" alt="arrow right">
-                    </button>
-                </div>
-
-                <div class="recipe-CtaCard">
-                    <img src="./assets/icon/kitchen-set-solid-full.svg" alt="Kitchen utensils">
-
-                    <div>
-                        <h3>Brand</h3>
-                        <p>Discover related brands</p>
-                    </div>
-
-                    <button class="recipe-CtaButton">
-                        <img src="./assets/icon/circle_arrow_right.svg" alt="arrow right">
-                    </button>
-                </div>
-
+                <i class="fa-solid fa-circle-arrow-right"></i>
             </div>
 
+            <div class="promo-card">
+                <div class="promo-card-icon"> <i class="fa-regular fa-lightbulb"></i></div>
+                <div class="promo-card-text">
+                    <h2>Tips & advice</h2>
+                    <p>Improve your cooking</p>
+                </div>
+                <i class="fa-solid fa-circle-arrow-right"></i>
+            </div>
+
+            <div class="promo-card">
+                <div class="promo-card-icon"> <i class="fa-solid fa-kitchen-set"></i></div>
+                <div class="promo-card-text">
+                    <h2>Brand</h2>
+                    <p>Discover related brands</p>
+                </div>
+                <i class="fa-solid fa-circle-arrow-right"></i>
+            </div>
         </section>
 
 
