@@ -232,7 +232,323 @@ nav span {
     box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
 }
 
+.new-recipes {
+    margin: var(--largeSpacer) 3rem;
+}
+
+.new-recipes-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: var(--largeSpacer);
+}
+
+.new-recipe-card {
+    background-color: var(--darkPurple);
+    border-radius: 8px;
+    padding: 10px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+
+}
+
+.new-icon img {
+    max-width: 60px;
+    max-height: 50px;
+    position: absolute;
+    display: block;
+    z-index: 2;
+    display: flex;
+    margin-bottom: 20px;
+
+
+
+
+
+}
+
+
+.new-recipe-card img {
+
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 6px;
+    display: block;
+
+}
+
+.new-recipe-card-body {
+    position: relative;
+    padding: var(--smallSpacer);
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.fa-bookmark {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 30px;
+    color: var(--primaryOrange);
+    cursor: pointer;
+
+}
+
+.new-recipe-card-body h2 {
+    margin: 0.3rem 0 0.1rem;
+    color: white;
+}
+
+.new-recipe-card-body .author {
+    color: white;
+    margin: 0 0 0.8rem;
+}
+
+.new-recipe-card-body button {
+    background-color: var(--primaryOrange);
+    color: var(--darkPurple);
+    border: none;
+    border-radius: 8px;
+    padding: 0.4rem 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    align-self: flex-end;
+}
+
+.new-stars-small {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+
+}
+
+.new-stars-small i {
+    font-size: 20px;
+    color: var(--primaryOrange);
+}
+
+.Chefs-brands {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--largeSpacer);
+    margin: var(--largeSpacer) 3rem;
+    margin-top: 7rem;
+}
+
+.Meet-our-chefs {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    background-color: #f3eaf2;
+    border-radius: 0 15px 15px 0;
+    padding: 1.5rem;
+}
+
+
+.Meet-our-chefs h2 {
+    grid-column: 1 / -1;
+    margin: 0;
+    font-size: var(--largeSpacer);
+}
+
+.chef {
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.chef-info {
+    position: relative;
+    z-index: 0;
+    width: 180px;
+    height: 145px;
+
+    background-color: white;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
+
+    border-radius: 0 0 3px 3px;
+    margin-top: -60px;
+    padding-top: 2rem;
+}
+
+.chef-info p {
+    margin: 0;
+    font-weight: bold;
+
+}
+
+
+.chef img {
+    position: relative;
+    z-index: 1;
+    width: 180px;
+    height: 200px;
+    object-fit: cover;
+    display: block;
+    border-radius: 50% 50% 0 0;
+}
+
+
+.Brands {
+    position: relative;
+    overflow: hidden;
+}
+
+.Brands h2 {
+    position: absolute;
+    top: 1.5rem;
+    left: 2rem;
+    margin: 0;
+    color: white;
+    z-index: 2;
+    font-size: var(--largeSpacer);
+}
+
+.Brands img {
+    width: 100%;
+    height: 100%;
+    min-height: 370px;
+    object-fit: cover;
+    display: block;
+}
+
+.Brands i {
+    position: absolute;
+    right: 1.5rem;
+    bottom: 1.5rem;
+
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+    color: white;
+
+    border-radius: 50%;
+    font-size: 48px;
+    z-index: 2;
+}
+
+.foodOTWeek {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    margin: var(--largeSpacer) 3rem;
+    margin-top: 7rem;
+    justify-items: end;
+}
+
+.foodOTWeek-img img {
+    width: 100%;
+    height: 100%;
+    border-radius: 0px 8px 8px 0px;
+
+
+}
+
+.foodOTWeek-text {
+    background-color: var(--mediumOrange);
+    display: flex;
+    flex-direction: column;
+    gap: var(--smallSpacer);
+    padding: var(--mediumSpacer);
+}
+
+.foodOTWeek button {
+    grid-column: 2 / -1;
+    grid-row: 2;
+
+    margin-top: 3rem;
+    margin-left: var(--smallSpacer);
+    background-color: var(--primaryOrange);
+    font-weight: bold;
+    font-size: 26px;
+    width: 289px;
+    height: 75px;
+    border-radius: 5px;
+    color: var(--darkPurple);
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+/* Cta cards */
+
+.ta-Cta {
+    width: 95%;
+    margin: 5rem auto;
+}
+
+.ta-CtaGrid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem;
+
+}
+
+.ta-CtaCard {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 1.5rem;
+    background-color: var(--primaryOrange);
+    border-radius: 8px;
+}
+
+.ta-CtaCard>i {
+    font-size: 30px;
+    align-self: flex-start;
+}
+
+.ta-CtaCard>img {
+    width: 70px;
+    height: 70px;
+}
+
+.ta-CtaCard h3,
+.ta-CtaCard p {
+    margin: 0;
+}
+
+.ta-CtaCard h3 {
+    margin-bottom: 0.2rem;
+}
+
+.ta-CtaButton {
+    border: none;
+    border-radius: 50%;
+    background-color: var(--primaryOrange);
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0;
+}
+
+.ta-CtaButton h3 {
+    font-weight: bold;
+    color: var(--darkPurple);
+}
+
+.ta-CtaButton img {
+    width: 48px;
+    height: 48px;
+
+}
+
+
 /* Food Story */
+
+/* Hero section */
 
 .fsHero {
     max-width: 1440px;
@@ -354,6 +670,8 @@ nav span {
     border-top: 1.5px solid black;
 }
 
+/* Food story section */
+
 .fsStory {
     max-width: 100%;
     margin: 5rem 0 0;
@@ -424,6 +742,8 @@ nav span {
     padding: var(--largeSpacer);
     margin-top: 0;
 }
+
+/* Gallery */
 
 .fsGallery {
     max-width: 1440px;
@@ -512,6 +832,8 @@ nav span {
     height: 28px;
 }
 
+/* Related stories */
+
 .fsRelatedStories {
     max-width: 1440px;
     width: 100%;
@@ -570,6 +892,9 @@ nav span {
     width: 48px;
     height: 48px;
 }
+
+
+/* Cta cards */
 
 .fsCta {
     max-width: 1440px;
@@ -640,7 +965,7 @@ nav span {
 
 .recipe-hero-media img {
 
-    width: 700px;
+    width: 900px;
     height: 526px;
     object-fit: cover;
     border-radius: 8px;
@@ -685,12 +1010,12 @@ nav span {
 }
 
 .recipe-hero-content button i {
-    font-size: 20px;
+    font-size: 24px;
 }
 
 
 .recipe-hero-rating {
-    width: 600px;
+    width: 900px;
     height: 526px;
     background-color: var(--mediumPurple);
     border-radius: 8px;
@@ -983,52 +1308,57 @@ nav span {
     margin-left: auto;
 }
 
-/* PROMO STRIP */
+/* Cta cards */
 
-.promo-strip {
+.recipe-Cta {
+    max-width: 1600px;
+    width: 100%;
+    margin: 5rem auto;
+}
 
+.recipe-CtaGrid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: var(--largeSpacer);
-    margin: var(--largeSpacer) 3rem;
+    gap: 2rem;
 }
 
-.promo-card {
+.recipe-CtaCard {
     display: flex;
-    gap: var(--smallSpacer);
-    background-color: var(--mediumOrange);
-    padding: var(--smallSpacer);
-    justify-content: space-between;
     align-items: center;
+    gap: 1rem;
+    padding: 1.5rem;
+    background-color: var(--mediumOrange);
 }
 
-.promo-card-icon {
-    font-size: 80px;
-    color: var(--darkPurple);
-
-
+.recipe-CtaCard>img {
+    width: 70px;
+    height: 70px;
 }
 
-.promo-card-text {
+.recipe-CtaCard h3,
+.recipe-CtaCard p {
+    margin: 0;
+}
+
+.recipe-CtaCard h3 {
+    margin-bottom: 0.2rem;
+}
+
+.recipe-CtaButton {
+    width: 40px;
+    height: 40px;
+    margin-left: auto;
+    border: none;
+    border-radius: 50%;
+    background-color: var(--mediumOrange);
     display: flex;
-    flex-direction: column;
-    gap: 4px;
+    align-items: center;
+    justify-content: center;
 }
 
-.promo-card-text h2 {
-    margin: 0;
-    color: black;
-}
-
-.promo-card-text p {
-    margin: 0;
-    font-size: 16px;
-}
-
-.fa-circle-arrow-right {
-    font-size: 50px;
-    color: var(--darkPurple);
-
+.fsCtaButton img {
+    width: 48px;
+    height: 48px;
 }
 
 /* REVIEWS */
